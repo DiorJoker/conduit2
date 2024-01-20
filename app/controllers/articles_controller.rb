@@ -9,6 +9,15 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def index
+    @test = 'ddddddd'
+    @articles = Article.all
+  end
+
+  def show
+    @test = 'ddddddd'
+    @article = Article.find_by(params[:id])
+  end
 
   private
 
